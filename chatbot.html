@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Laundry Chatbot</title>
+</head>
+<body>
+  <h2>Laundry Service Bot</h2>
+  <div id="chat">
+    <div id="step1">
+      <p>Select Service:</p>
+      <button onclick="selectService('Washing')">Washing</button>
+      <button onclick="selectService('Ironing')">Ironing</button>
+      <button onclick="selectService('Dry Cleaning')">Dry Cleaning</button>
+    </div>
+    <div id="step2" style="display:none;">
+      <p>Enter Quantity (kg/items):</p>
+      <input id="quantity" type="number">
+      <button onclick="nextStep()">Next</button>
+    </div>
+    <div id="step3" style="display:none;">
+      <p>Enter Address:</p>
+      <input id="address" type="text">
+      <button onclick="confirmOrder()">Confirm</button>
+    </div>
+    <div id="confirmation" style="display:none;">
+      <h4>Order Submitted!</h4>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
